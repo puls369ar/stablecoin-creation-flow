@@ -36,3 +36,6 @@ So first we add USDT as a collateral token by calling `addReserveVault(<USDT_ADD
 
 # Creating and Deploying A4USDGovernance, Setting USDT as Collateral
 A4USD [contract](https://github.com/puls369ar/stablecoin-creation-flow/blob/main/code/A4USDGovernance.sol) has functions `setReserveContract(<A4USDReserves_ADDRESS>)` and `addColateralToken(<USDT_ADDRESS>)` to set appropriate values. `fetchColPrice()` is the function that gets price of USDT from  custom chainlink node configured specifically for our goal. I have a guide on creating this node [here](https://github.com/puls369ar/chainlink-node-creation-flow). Transfer the remaining 1,000,000 USDT to it and finally call `validatePeg()` function, which will implement the stabilizing logic of stablecoin discussed earlier in the theory section.
+
+# The End
+I hope this article helped. Feel free to reach me out or open a pull request if you have questions or suggestions. TNX.
